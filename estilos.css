@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azulClaro:rgb(79, 79, 246);
+    --azulEscuro:rgb(1, 1, 99);
+}
+@font-face{
+    font-family:amor;
+    src: url("Love.ttf");
+}
+
+h1{
+    font-family: amor;
+    color: white;
+    font-size: 60px;
+}
+body {
+    background: linear-gradient(90deg,rgb(79, 79, 246), rgb(1, 1, 99));
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 25%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.box label,span{
+    color: white;
+}
+.box input[type="submit"]{
+    background:var(--azulClaro);
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    display: block;
+    margin:0 auto;
+    border: 1px solid transparent;
+    transition: 0.8s;
+}
+.box input[type="submit"]:hover{
+    background:var(--azulEscuro);
+    border: 1px solid white;
+    
+}
+
+.box textarea{
+    resize: none;
+    width: 100%;
+    height: 90px;
+    border-radius: 8px;
+}
+.box textarea:focus{
+    background: lightsalmon;
+}
+
+.box input[type="text"],input[type="email"],input[type="file"],input[type="select"]{
+    padding: 3px;
+}
+
+.box input[type="text"]:focus,input[type="email"]:focus,input[type="select"]:focus{
+    background: lightsalmon;
+
+}
